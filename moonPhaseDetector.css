@@ -1,0 +1,65 @@
+/* moonPhaseDetector.css */
+#moon-phase-detector {
+    background-color: black; /* Light background with transparency */
+    border-radius: 10px;
+    margin-top: 200px;
+    margin-bottom: 500px;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  #moon-phase-detector h2 {
+    font-size: 2.5em; /* Larger font size */
+    color: #fff; /* White text color */
+    margin-bottom: 20px;
+  }
+  
+  #moon-phase-detector label {
+    font-size: 1.2em; /* Increased label font size */
+    color: #fff; /* White text color */
+  }
+  
+  #moon-phase-detector input[type="date"] {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-left: 10px;
+  }
+  
+  #moon-phase-detector button {
+    padding: 10px 20px;
+    font-size: 1.1em; /* Increased button font size */
+    border-radius: 5px;
+    border: none;
+    background-color: #646cff; /* Button background color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #moon-phase-detector button:hover {
+    background-color: #535bf2; /* Darker shade on hover */
+  }
+  
+  .moon-phase {
+    margin-top: 20px;
+  }
+  
+  .moon-phase p {
+    font-size: 1.5em; /* Increased paragraph font size */
+    color: #fff; /* White text color */
+  }
+  
+  .moon-phase img {
+    display: block; /* Center the image */
+    margin: 10px auto;
+    max-width: 80%; /* Responsive image size */
+    border-radius: 10px; /* Rounded corners for the image */
+  }
+
+
+  

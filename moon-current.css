@@ -1,0 +1,221 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700,400italic,700italic|Open+Sans:400italic,600italic,700italic,400,300,600,700,800);
+
+.moonphases {
+	width: 655px;
+	margin: 5px; 
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	border: 3px solid #1e2d44;
+	
+	background: #1e2d44;
+	
+	padding: 3px;
+	padding-bottom: 1px;
+	text-align: center;
+	vertical-align: top;
+	-webkit-font-smoothing: antialiased;
+}
+
+.moonphases_tiny {
+	width: 106px;
+	margin: 2px; 
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 0px;
+	border: 0px solid #1e2d44;
+	
+	background: #1e2d44;
+	
+	padding: 2px;
+	padding-bottom: 3px;
+	text-align: center;
+	vertical-align: top;
+	-webkit-font-smoothing: antialiased;
+}
+
+.moonphases_wide {
+	width: 450px;
+	margin: 5px; 
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	border: 3px solid #1e2d44;
+	
+	background: #1e2d44;
+	
+	padding: 3px;
+	text-align: center;
+	vertical-align: top;
+	-webkit-font-smoothing: antialiased;
+}
+
+.moonphases_thin {
+	width: 320px;
+	margin: 5px; 
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	border: 3px solid #1e2d44;
+	
+	background: #1e2d44;
+	
+	padding: 3px;
+	text-align: center;
+	vertical-align: top;
+	-webkit-font-smoothing: antialiased;
+}
+
+.moonphases div {
+	display: inline-block !important;
+	width: 98% !important;
+	margin-left: auto !important;
+	margin-right: auto !important;	
+}
+
+.moonphases_tiny div, .moonphases_thin div {
+	display: inline-block !important;
+	width: 100px;	
+}
+
+.moonphases_wide div {
+	display: inline-block !important;
+	width: 140px;	
+}
+
+.moonphase_right {
+	float: right;
+}
+
+.moonphases_logo {	
+	background: url('//moonphases.co.uk/images/logo_small.png') center top no-repeat;
+	background-size: 110px;
+	padding-top: 100px;
+}
+
+.moonphases_logo_small {	
+	background: url('//moonphases.co.uk/images/logo_small.png') center top no-repeat;
+	background-size: 80px;
+	padding-top: 90px;
+}
+
+.moonphases_phase {
+	display: inline-block;
+	border-radius: 3px;
+	background: #000;
+	padding: 3px;
+	text-align: center; 
+}
+
+.moonphases h2, .moonphases_wide h2 {
+	font: 600 13px "Open Sans", Arial, Helvetica, sans-serif !important;
+	color: #fff !important;
+	text-transform: uppercase !important;
+	display: block !important;
+	margin: 0 auto !important;
+}
+
+.moonphases h3, .moonphases_wide h3 {
+	font: 700 12px "Open Sans", Arial, Helvetica, sans-serif !important;
+	color: #8aa4ce !important;
+	text-transform: uppercase !important;
+	
+	display: inline-block !important;
+	margin: 5px auto 0 !important;
+	
+	padding: 0 0 0 0 !important;
+}
+
+.moonphases_tiny h2, .moonphases_thin h2 {
+	font: 700 10px "Open Sans", Arial, Helvetica, sans-serif !important;
+	color: #fff !important;
+	text-transform: uppercase !important;
+	display: block !important;
+	margin: 0 auto !important;
+}
+
+.moonphases_tiny h3, .moonphases_thin h3 {
+	font: 700 10px "Open Sans", Arial, Helvetica, sans-serif !important;
+	color: #8aa4ce !important;
+	text-transform: uppercase !important;
+	
+	display: inline-block !important;
+	margin: 2px auto 0 !important;
+	
+	padding: 0 0 0 0 !important;
+}
+
+.moonphases_phase img {
+	display: inline-block !important;
+	height: 80px !important;
+	width: 80px !important;
+	margin: 3px 2px !important;
+	border: 0px !important;
+	float: none !important;
+}
+
+.moonphases_phase p, .moonphases_phase p a, .moonphases_phase a {
+	font: 400 11px "Open Sans", Arial, Helvetica, sans-serif !important;
+	color: #8aa4ce !important;
+	margin: 0 !important;
+	border:  0px !important;
+	text-decoration: none !important;
+}
+
+.moonphases_rise_time, .moonphases_set_time {
+	position: relative;
+	display: inline-block;
+	width: 95px !important;
+	min-height: 40px;
+	margin: 2px 5px 5px;
+	border-radius: 3px;
+	
+	background: #162234;
+	/*background: #1e2d44;*/
+	padding: 4px;
+	text-align: center; 
+	
+	font: 700 26px "Open Sans", Arial, Helvetica, sans-serif;
+	color: #fff;
+}
+
+.moonphases_rise_time_tiny, .moonphases_set_time_tiny {
+	position: relative;
+	display: inline-block;
+	width: 80px !important;
+	min-height: 30px;
+	margin: 2px 5px 5px;
+	border-radius: 3px;
+	
+	background: #162234;
+	/*background: #1e2d44;*/
+	padding: 3px;
+	text-align: center; 
+	
+	font: 700 22px "Open Sans", Arial, Helvetica, sans-serif;
+	color: #fff;
+}
+
+.moonphases_rise_time::after, .moonphases_set_time::after, .moonphases_rise_time_tiny::after, .moonphases_set_time_tiny::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 53%;
+	width: 100%;
+	border-bottom: 1px solid #162234;
+}
+
+.moonphases_rise_time span, .moonphases_set_time span, .moonphases_rise_time_tiny span, .moonphases_set_time_tiny span {
+	color: #465777 !important;
+	margin: 0 2px !important;
+}
+
+.moonphases_foot, .moonphases_foot a {
+	font: 400 10px "Open Sans", Arial, Helvetica, sans-serif !important;
+	color: #8aa4ce !important;
+	margin: 0 !important;
+	border:  0px !important;
+	text-decoration: none !important;
+}

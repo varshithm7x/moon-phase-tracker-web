@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0" />
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com"
+    crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap" rel="stylesheet">
+<!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="moonPhaseDetector.css">
+    <title>3D model landing page</title>
+  </head>
+  <body>
+    <!--HTML goes here-->
+    <!--Javascript-->
+    <script type="module" src="/main.js"></script>
+
+    <header>
+      <div class="class-container">
+        <canvas id="webg1"></canvas>
+        <div class="text">
+          <h1>Myteries of <br>the Moon</h1>
+          <p>
+            Join us on an extraordinary journey to discover the secrets and wonders of Earth's celestial companion
+          </p>
+        </div>
+      </div>
+      <div class="app">
+        <section id="moon-phase-detector">
+          <h2>Moon Phase Detector</h2>
+          <div>
+            <label for="date">Enter a Date:</label>
+            <input type="date" id="date">
+            <button onclick="detectMoonPhase()">Check Moon Phase</button>
+          </div>
+          
+          <div class="moon-phase">
+            <p id="phaseText"></p>
+            <img id="moonImage" src="" alt="Moon phase">
+          </div>
+        </section>
+        
+        <script src="moonPhaseDetector.js"></script>
+      </div>
+      <div class="floater moon_ctrl1 snipcss-mY8Sl">
+        <div id="moon_phase">
+            <h2>Moon Phase For</h2>
+            <h3 id="moon_date_text">Today, Sat 28th Sep</h3>
+            <a class="arrows" id="moon_phase_prev" href="#" onclick="changeDay(-1);return false;">w</a>
+            <a href="#moon_view" id="moon_launch" rel="moon_launch">
+                <img id="moon_img" src="https://moonphases.co.uk/images/moons/2.png" alt="Waning Crescent" class="style-NexxQ">
+            </a>
+            <a class="arrows" id="moon_phase_next" href="#" onclick="changeDay(1);return false;">e</a>
+            <h3 id="moon_phase_text">Waning Crescent</h3>
+            <p id="moon_illum_text">18% / 0.5</p>
+            <p id="moon_sign_text"><a id="moon_sign_link" href="">Leo</a></p>
+        </div>
+    </div>
+    </div>
+    </header>
+
+    <div style="position: absolute; right: 50px; top: 1100px;">
+      <span style="font-size: 25px; font-weight: 600; color: #8aa4ce;">Moon Rise Timing</span><hr><br><br>
+      <span style="font-size: 20px;">2:43 AM</span>
+      <br><br>
+      <span style="font-size: 25px; font-weight: 600; color: #8aa4ce;">Moon Rise Timing</span><hr><br><br>
+      <span style="font-size: 20px;">4:17 PM</span><br>
+      <img src="image.png" style="width: 440px;" height="200px">
+    </div>
+
+    <div class="snipcss-Q2g5Q">
+      <h2 style="font-size: 30px;">Moon Phases for Rajkot, 25 Sep 2024 – 17 Oct 2024</h2><br><br>
+      <div class="moon-phases">
+          <div class="moon-phases-card">
+              <h3><a href="/astronomy/moon/third-quarter.html">Third Quarter</a></h3><img class="moon-phases-card__img" src="https://c.tadst.com/gfx/moon2.svg">
+              <div class="moon-phases-card__date">25 September</div>
+              <div class="moon-phases-card__time">00:19</div>
+          </div>
+          <div class="moon-phases-card">
+              <h3><a href="/astronomy/moon/new-moon.html">New Moon</a></h3><img class="moon-phases-card__img" src="https://c.tadst.com/gfx/moon3.svg">
+              <div class="moon-phases-card__date">3 October</div>
+              <div class="moon-phases-card__time">00:19</div>
+          </div>
+          <div class="moon-phases-card">
+              <h3><a href="/astronomy/moon/first-quarter.html">First Quarter</a></h3><img class="moon-phases-card__img" src="https://c.tadst.com/gfx/moon4.svg">
+              <div class="moon-phases-card__date">11 October</div>
+              <div class="moon-phases-card__time">00:25</div>
+          </div>
+          <div class="moon-phases-card">
+              <h3><a href="/astronomy/moon/full-moon.html">Full Moon</a></h3><img class="moon-phases-card__img" src="https://c.tadst.com/gfx/moon1.svg">
+              <div class="moon-phases-card__date">17 October</div>
+              <div class="moon-phases-card__time">16:56</div>
+              <div class="moon-phases-card__extra"><a href="/astronomy/moon/hunters.html">Hunter's Moon</a></div>
+          </div>
+      </div>
+  </div>
+  <div>
+    <span style="position: absolute; right: 570px; font-size: 40px; top: 1620px; font-weight: 600; color: #9b9fee;">Agricultral Phase</span>
+    <img style="position: absolute; right: 100px; height: 1300px; top: 1700px;" decoding="async" width="800" height="2000" src="https://moon-mind-more.com/wp-content/uploads/2024/03/infographic-lunar-guide-planting.jpg" alt="Infographic: lunar guide to planting" class="kb-img wp-image-1649 snipcss-N7XQo">
+  </div>
+
+
+  
+<br><br><br>
+<div class="photography">
+  <p>
+    P <br>
+    H <br>
+    O <br>
+    T <br>
+    O <br>
+    G <br>
+    R <br>
+    A<br>
+    P<br>
+    H<br>
+    Y
+  </p>
+</div>
+  <div class="two-figures screenshot snipcss-EEGWB" style="position: absolute; right: 1100px; top: 2100px; height: 600px;">
+    
+    <div>
+        <figure><img width="400px" height="800px" alt="PhotoPills Advanced depth of field tool at 50mm" class="b-lazy b-loaded" src="https://www.photopills.com/sites/default/files/articles/moon-photography-cheat-sheet/2-fov-50-en.webp"></figure>
+        <a href="#" style="color: rgb(41, 190, 228); text-decoration: none; font-size: 10px; ">Click here Know More About photography tips</a>
+    </div>
+  </div>
+
+
+  </body>
+</html>

@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.shootingstars {
+  display: block;
+  position: fixed;
+  width: 150vh;
+  height: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transform: translatex(calc(50vw - 50%)) translatey(calc(50vh - 50%)) rotate(120deg);
+          transform: translatex(calc(50vw - 50%)) translatey(calc(50vh - 50%)) rotate(120deg);
+}
+
+.sky {
+  background-color: #000000;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 2em #f7df1eaa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+body{
+  font-family: sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.canvas-container{
+  overflow: hidden;
+}
+
+.text{
+  color: #fff;
+  padding: 2em;
+}
+
+.text h1{
+  font-size: 2.5em;
+  font-family: 'Kanit' , sans-serif;
+  line-height: 50px;
+}
+
+.text p{
+  color: #afafaf;
+  max-width: 400px;
+  margin: 1em 0;
+  line-height: 27px;
+}
+
+.text{
+  position: relative;
+  padding: 1em;
+}
+
+@media screen and (max-width: 800px){
+  header{
+    grid-template-columns: 1fr;
+    order: 1;
+  }
+  .app{
+    order: 2;
+  }
+  .text p{
+    margin: 1em auto;
+  }
+  .text {
+    bottom: auto;
+    left: auto;
+    padding: 0;
+    text-align: center;
+  }
+
+  .app {
+    position: static;
+    margin: 0 auto;
+    top: 0;
+    right: 0;
+  }
+
+  .current-moon-phase {
+    position: static;
+    margin: 0 auto;
+    top: 0;
+    right: 0;
+  }
+
+  .floater {
+    position: static;
+    margin: 0 auto;
+    top: 0;
+    right: 0;
+  }
+
+  .educational-resources, .photography {
+    position: static;
+    text-align: center;
+    margin: 20px 0;
+  }
+}
+
+@media screen and (min-width:1000px){
+  .text h1{
+    font-size: 3.4em;
+  }
+  .text p{
+    font-size: 1.1em;
+  }
+  .text h1 {
+    font-size: 4.5em;
+  }
+
+  .moon-phases-card {
+    flex: 0 0 22%;
+    padding: 20px;
+  }
+
+  .moon-phases-card__img {
+    max-width: 150px;
+  }
+
+  .moon-phases-card__date,
+  .moon-phases-card__time,
+  .moon-phases-card__extra {
+    font-size: 1.2em;
+  }
+}
+
+
+header{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1900px;
+}
+
+.shootingstars{
+  display: block;
+  position: fixed;
+  width: 150vh;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transform: translatex(calc(50vw - 50%) translatey(calc(50vh - 50%)) rotate(120deg));
+          transform: translatex(calc(50vw - 50%)) translatey(calc(50vh - 50%)) rotate(120deg);
+}
+
+.app{
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 700px;
+  right: 900px;
+}
+
+.app :hover{
+  transform: 0.6s all ease;
+}
+
+
+
+.text{
+  position: relative;
+  bottom: 600px;
+  left: 900px;
+}
+
+.text{
+  color: #fff;
+  padding-right: 50px;
+  margin-right: 500px;
+  text-align: left;
+  margin-left: 2em;
+}
+
+.text h1{
+  font-size: 5.5em;
+  font-family: 'Kanit' , sans-serif;
+  line-height: 50px;
+  padding-right: 50px;
+}
+
+.text p{
+  color: #afafaf;
+  max-width: 400px;
+  margin: 1em 0;
+  line-height: 27px;
+  font-size: 1.6em;
+}
+
+.current-moon-phase{
+  position: relative;
+  right: 600px;
+  top: 700px;
+}
+
+@import url("//fonts.googleapis.com/css?family=Droid+Sans"); 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800,300i,400i,500i,600i,700i,800i&display=swap'); 
+@font-face { 
+  font-family:'fontello';
+  src:url('https://moonphases.co.uk/font/fontello.eot?14178369');
+  src:url('https://moonphases.co.uk/font/fontello.eot?14178369#iefix') format('embedded-opentype'),
+       url('https://moonphases.co.uk/font/fontello.woff?14178369') format('woff'),
+       url('https://moonphases.co.uk/font/fontello.ttf?14178369') format('truetype'),
+       url('https://moonphases.co.uk/font/fontello.svg?14178369#fontello') format('svg');
+  font-weight:normal;
+  font-style:normal;
+} 
+  body {  
+    background:url('https://moonphases.co.uk/images/bg_top_trans.png'), linear-gradient(to bottom, #1e2d44 0%, #060a0f 100%);
+    font:normal 12px "Open Sans", Arial, Helvetica, sans-serif;
+  }  
+@media screen and (min-width: 740px){     
+  body {  
+    background-image:url('https://moonphases.co.uk/images/bg_top_trans.png'), url('https://moonphases.co.uk/images/bg_bot_big.png');
+  }  
+}  
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+} 
+
+body { 
+    margin: 0; 
+    background: #1e2d44; 
+    background: url('https://moonphases.co.uk/images/bg_top_trans.png'), -moz-linear-gradient(top, #172537 0%, #060a0f 100%); 
+    background: url('https://moonphases.co.uk/images/bg_top_trans.png'), -webkit-gradient(left top, left bottom, color-stop(0%, #172537), color-stop(100%, #060a0f)); 
+    background: url('https://moonphases.co.uk/images/bg_top_trans.png'), -webkit-linear-gradient(top, #172537 0%, #060a0f 100%); 
+    background: url('https://moonphases.co.uk/images/bg_top_trans.png'), -o-linear-gradient(top, #172537 0%, #060a0f 100%); 
+    background: url('https://moonphases.co.uk/images/bg_top_trans.png'), -ms-linear-gradient(top, #172537 0%, #060a0f 100%); 
+    background: url('https://moonphases.co.uk/images/bg_top_trans.png'), linear-gradient(to bottom, #1e2d44 0%, #060a0f 100%); 
+    background-position: center top; 
+    background-repeat: repeat-x; 
+    font: normal 12px "Open Sans", Arial, Helvetica, sans-serif; 
+    -webkit-font-smoothing: antialiased;
+} 
+
+@media screen and (min-width: 740px){ 
+  body { 
+    background-color: #182437; 
+    background-image: url('https://moonphases.co.uk/images/bg_top_trans.png'), url('https://moonphases.co.uk/images/bg_bot_big.png'); 
+    background-position: center top, center bottom; 
+    background-repeat: repeat-x, repeat-x; 
+    background-attachment: fixed, fixed;
+  } 
+}     
+
+.floater{
+  position: relative;
+  right: 700px;
+  top: 750px;
+}
+
+.floater { 
+    width: 460px; 
+    min-height: 400px; 
+    margin-right: 0px; 
+    float: left; 
+    margin-bottom: 15px;
+} 
+
+*,:before,:after { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+} 
+
+#moon_phase { 
+    width: 440px; 
+    min-height: 480px; 
+    margin: 10px; 
+    border-radius: 3px; 
+    background: #000; 
+    padding: 10px; 
+    text-align: center;
+} 
+
+
+
+#moon_phase h2  { 
+    font: 700 25px "Open Sans", Arial, Helvetica, sans-serif; 
+    color: #8aa4ce; 
+    text-transform: uppercase; 
+    display: inline-block; 
+    padding-bottom: 4px; 
+    border-bottom: 2px solid #3c4a67; 
+    margin: 0 auto 5px;
+} 
+
+#moon_phase h3  { 
+    font: 600 25px "Open Sans", Arial, Helvetica, sans-serif; 
+    color: #fff; 
+    text-transform: uppercase; 
+    display: block; 
+    margin: 0 auto 5px;
+} 
+
+a { 
+    text-decoration: underline; 
+    color: #6f8fc0;
+} 
+
+#moon_phase a  { 
+    border: 0px; 
+    text-decoration: none;
+} 
+
+#moon_phase a.arrows  { 
+    font-family: 'fontello' !important; 
+    font-size: 28px; 
+    color: #f0c74e; 
+    text-decoration: none; 
+    display: inline-block; 
+    vertical-align: top; 
+    margin: 55px 10px 30px;
+} 
+
+a:hover { 
+    text-decoration: underline; 
+    color: #dbb84f;
+} 
+
+#moon_phase hr  { 
+    background: #000; 
+    height: 0px; 
+    width: 134px; 
+    border: 1px solid #3c4a67;
+} 
+ 
+
+#moon_phase p  { 
+    font: 400 14px "Open Sans", Arial, Helvetica, sans-serif; 
+    color: #8aa4ce; 
+    margin: 0; 
+    text-decoration: none;
+} 
+
+#moon_phase img  { 
+    display: inline-block; 
+    height: 220px; 
+    width: 220px; 
+    margin: 10px 2px; 
+    border: 0; 
+    -webkit-backface-visibility: hidden;
+} 
+
+ 
+
+#moon_phase p a  { 
+    font: 400 14px "Open Sans", Arial, Helvetica, sans-serif; 
+    color: #8aa4ce; 
+    margin: 0; 
+    text-decoration: none;
+} 
+
+
+/* These were inline style tags. Uses id+class to override almost everything */
+#moon_img.style-NexxQ {  
+   transform: rotate(-27.7deg);  
+}  
+
+.moon-timing{
+  position: relative;
+  right: 300px;
+}
+ 
+
+
+
+
+
+:root { 
+  --advert-sky-size: 300px;
+} 
+
+:root { 
+  --grid-width: 0px; 
+} 
+
+@media only screen and (min-width: 90.063em){ 
+:root { 
+  --grid-width: 1232px; 
+  --gutter-width: calc((100vw - var(--grid-width))/2);
+} 
+}     
+
+*,:after,:before { 
+  box-sizing: border-box;
+} 
+
+   
+
+.moon-phases { 
+  border-left: 1px solid #ccc; 
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-between;
+} 
+
+.moon-phases-card { 
+  align-items: center; 
+  border-right: 1px solid #ccc; 
+  display: flex; 
+  flex: 0 0 25%; 
+  flex-direction: column; 
+  font-size: 18px;
+} 
+
+
+
+@media only screen and (min-width: 90.063em){ 
+h3 { 
+  margin: 24px 0 6px;
+} 
+}     
+
+img { 
+  border: 0;
+} 
+
+img { 
+  box-sizing: content-box;
+} 
+
+img { 
+  line-height: 1; 
+  vertical-align: middle;
+} 
+
+.moon-phases-card__img { 
+  max-width: 100px;
+} 
+
+img,img:after,img:before { 
+  box-sizing: content-box;
+} 
+
+.moon-phases-card__date { 
+  color: #afafaf; 
+  font-weight: 700; 
+  padding: 6px 0; 
+  text-align: center;
+} 
+
+.moon-phases-card__time { 
+  color: white; 
+  font-weight: 700; 
+  padding: 6px 0; 
+  text-align: center;
+} 
+
+.moon-phases-card__time { 
+  font-size: 80%;
+} 
+
+.moon-phases-card__extra { 
+  color: white; 
+  font-weight: 700; 
+  padding: 6px 0; 
+  text-align: center;
+} 
+
+.moon-phases-card__extra { 
+  padding: 6px;
+} 
+
+a { 
+  background: transparent;
+} 
+
+a { 
+  color: var(--color-text-link,#556bb5); 
+  text-decoration: none;
+} 
+
+a:hover { 
+  outline: 0; 
+  text-decoration: underline;
+} 
+
+.snipcss-Q2g5Q{
+  position: absolute;
+  right: 1100px;
+  top: 1630px;
+}
+
+.educational-resources{
+  position: absolute;
+  right: 1200px;
+  top: 2000px;
+  font-weight: 600;
+}
+
+
+.photography{
+  position: absolute;
+  font-weight: 700;
+  right: 1540px;
+  top: 2080px;
+  font-size: 50px;
+  line-height: 1.5em;
+  font-family: 'Kanit';
+}
+
